@@ -1,5 +1,6 @@
 # flutter_app_2
 
+A new Flutter project.
 A new Flutter project: Login Screen
 ## Getting Started
 
@@ -13,6 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-<img src="![Screenshot_1631953352](https://user-images.githubusercontent.com/89629701/133883417-cb1a2de2-a286-4f1a-b296-ac7ae914ab71.png)
-" width = "250">
+<img src="https://user-images.githubusercontent.com/89629701/133883417-cb1a2de2-a286-4f1a-b296-ac7ae914ab71.png" width = "250">
 
