@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class LoginUI extends StatelessWidget {
+class LoginUI extends StatefulWidget {
   const LoginUI({Key? key}) : super(key: key);
 
+  @override
+  _LoginUIState createState() => _LoginUIState();
+}
+
+class _LoginUIState extends State<LoginUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +29,7 @@ class LoginUI extends StatelessWidget {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 100.0,
+                    height: 80,
                   ),
                   Image.asset(
                     'assets/images/education.png',
@@ -32,7 +37,7 @@ class LoginUI extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * 0.5,
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 10,
                   ),
                   RichText(
                     text: TextSpan(
@@ -40,9 +45,9 @@ class LoginUI extends StatelessWidget {
                         TextSpan(
                           text: 'DTI',
                           style: TextStyle(
-                            color: Colors.pink,
+                            color: Colors.purple,
                             fontFamily: 'Kanit',
-                            fontSize: 35.0,
+                            fontSize: 35,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -51,7 +56,7 @@ class LoginUI extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.orange,
                             fontFamily: 'Kanit',
-                            fontSize: 35.0,
+                            fontSize: 35,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -60,25 +65,25 @@ class LoginUI extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.blue,
                             fontFamily: 'Kanit',
-                            fontSize: 35.0,
+                            fontSize: 35,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         TextSpan(
                           text: '-',
                           style: TextStyle(
-                            color: Colors.yellow,
+                            color: Colors.orange,
                             fontFamily: 'Kanit',
-                            fontSize: 35.0,
+                            fontSize: 35,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         TextSpan(
-                          text: 'IOT',
+                          text: 'IoT',
                           style: TextStyle(
-                            color: Colors.red,
+                            color: Colors.red[800],
                             fontFamily: 'Kanit',
-                            fontSize: 35.0,
+                            fontSize: 35,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -88,15 +93,15 @@ class LoginUI extends StatelessWidget {
                   Text(
                     'Southeast Asia University',
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
                       fontFamily: 'Kanit',
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
-                      left: 40.0,
-                      right: 40.0,
-                      top: 40.0,
+                      left: 40,
+                      right: 40,
+                      top: 40,
                     ),
                     child: TextField(
                       decoration: InputDecoration(
@@ -122,7 +127,7 @@ class LoginUI extends StatelessWidget {
                         floatingLabelBehavior: FloatingLabelBehavior.always,
                         labelStyle: TextStyle(
                           fontFamily: 'Kanit',
-                          color: Color(0xff101276),
+                          color: Color(0xFF101276),
                         ),
                         hintText: 'ภาษาอังกฤษเท่านั้น',
                         hintStyle: TextStyle(
@@ -138,9 +143,9 @@ class LoginUI extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
-                      left: 40.0,
-                      right: 40.0,
-                      top: 20.0,
+                      left: 40,
+                      right: 40,
+                      top: 20,
                     ),
                     child: TextField(
                       decoration: InputDecoration(
@@ -166,7 +171,7 @@ class LoginUI extends StatelessWidget {
                         floatingLabelBehavior: FloatingLabelBehavior.always,
                         labelStyle: TextStyle(
                           fontFamily: 'Kanit',
-                          color: Color(0xff101276),
+                          color: Color(0xFF101276),
                         ),
                         hintText: 'ไม่ต่ำกว่า 6 ตัวอักษร',
                         hintStyle: TextStyle(
@@ -177,7 +182,9 @@ class LoginUI extends StatelessWidget {
                           Icons.lock,
                           color: Color(0xFF101276),
                         ),
-                        suffixIcon: Icon(Icons.visibility_off),
+                        suffixIcon: Icon(
+                          Icons.visibility_off,
+                        ),
                       ),
                     ),
                   ),
@@ -235,7 +242,7 @@ class LoginUI extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       fixedSize: Size(
                         MediaQuery.of(context).size.width - 80,
-                        50.0,
+                        50,
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
@@ -270,6 +277,7 @@ class LoginUI extends StatelessWidget {
                             'หรือ',
                             style: TextStyle(
                               fontFamily: 'Kanit',
+                              color: Colors.grey,
                             ),
                           ),
                         ),
@@ -283,7 +291,7 @@ class LoginUI extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 15.0,
+                    height: 10.0,
                   ),
                   ElevatedButton.icon(
                     onPressed: () {},
@@ -297,8 +305,10 @@ class LoginUI extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      fixedSize:
-                          Size(MediaQuery.of(context).size.width - 80, 50.0),
+                      fixedSize: Size(
+                        MediaQuery.of(context).size.width - 80,
+                        50.0,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                           50.0,
@@ -308,7 +318,7 @@ class LoginUI extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 15.0,
+                    height: 10.0,
                   ),
                   ElevatedButton.icon(
                     onPressed: () {},
@@ -322,8 +332,10 @@ class LoginUI extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      fixedSize:
-                          Size(MediaQuery.of(context).size.width - 80, 50.0),
+                      fixedSize: Size(
+                        MediaQuery.of(context).size.width - 80,
+                        50.0,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                           50.0,
@@ -333,7 +345,7 @@ class LoginUI extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 15.0,
+                    height: 10.0,
                   ),
                   ElevatedButton.icon(
                     onPressed: () {},
@@ -347,18 +359,20 @@ class LoginUI extends StatelessWidget {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      fixedSize:
-                          Size(MediaQuery.of(context).size.width - 80, 50.0),
+                      fixedSize: Size(
+                        MediaQuery.of(context).size.width - 80,
+                        50.0,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                           50.0,
                         ),
                       ),
-                      primary: Color(0xFF33333),
+                      primary: Color(0xFF333333),
                     ),
                   ),
                   SizedBox(
-                    height: 15.0,
+                    height: 40.0,
                   ),
                 ],
               ),
