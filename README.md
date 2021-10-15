@@ -1,6 +1,6 @@
 # flutter_app_2
 
-A new Flutter project.
+
 A new Flutter project: Login Screen
 ## Getting Started
 
